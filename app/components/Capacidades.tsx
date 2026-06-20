@@ -20,10 +20,12 @@ const capacidades = [
 
 export default function Capacidades() {
   return (
-    <div className="flex justify-center gap-12 mt-24">
-      {capacidades.map((c) => {
-        return <CapacidadeCard titulo={c.titulo} corpo={c.corpo} />;
-      })}
-    </div>
+    <section id="capacidades" className="flex justify-center gap-12 mt-24">
+      <div className="flex justify-between gap-12 border-b pb-8">
+        {capacidades.map((c) => {
+          return <CapacidadeCard titulo={c.titulo} corpo={c.corpo} />;
+        })}
+      </div>
+    </section>
   );
 }
