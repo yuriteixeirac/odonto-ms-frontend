@@ -4,7 +4,7 @@ import TextInput from "./TextInput";
 
 export default function Contato() {
   return (
-    <section id="contato" className="grid grid-cols-2 mx-12">
+    <section id="contato" className="grid grid-cols-2 mx-12 mb-24">
       <div className="p-8  border-r border-[var(--stormy-teal)]">
         <h1 className="text-2xl font-semibold">Entre em contato!</h1>
         <form className="flex flex-col rounded-xl border-2 border-[var(--stormy-teal)] p-6 gap-3">
