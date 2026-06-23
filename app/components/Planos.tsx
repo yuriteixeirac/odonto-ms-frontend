@@ -1,8 +1,11 @@
 export default function Planos() {
   return (
-    <section className="flex justify-center mx-auto w-295 text-white my-36">
+    <section
+      id="planos"
+      className="flex justify-center mx-auto w-295 text-white my-36"
+    >
       <div className="grid grid-cols-2 gap-6">
-        <article id="plano-card" className="rounded-xl p-6">
+        <article className="plano-card rounded-xl p-6">
           <h2 className="font-semibold text-xl">Plano simples</h2>
           <p>
             O plano mais simples conta com o acesso anual do software e
@@ -12,7 +15,7 @@ export default function Planos() {
           </p>
         </article>
 
-        <article id="plano-card" className="grid grid-cols-2 rounded-xl p-7">
+        <article className="plano-card grid grid-cols-2 rounded-xl p-7">
           <div className="flex text-center flex-col justify-center items-center border-r">
             <h2 className="font-semibold text-xl">R$ 3.200,00 anual</h2>
             <p>Pelo acesso ao software.</p>

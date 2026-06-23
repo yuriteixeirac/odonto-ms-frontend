@@ -1,5 +1,5 @@
 import type { CSSProperties } from "react";
-import dentistaBackground from "../../public/dentista.png";
+import dentistaBackground from "/dentista.png";
 import Botao from "./Botao";
 
 export default function Hero() {
@@ -16,9 +16,9 @@ export default function Hero() {
       className="flex grow justify-center items-center flex-col w-full max-w-8xl mx-auto p-4"
     >
       <div className="flex justify-center items-end flex-col m-32 text-right max-w-2xl text-black-700 ml-auto">
-        <h2 className="text-5xl leading-tight font-bold">
+        <h1 className="text-5xl leading-tight font-bold">
           OdontoMS, o seu sistema de gerenciamento clínico.
-        </h2>
+        </h1>
         <p className="py-4 text-xl font-semibold">
           O sistema que centraliza agendamentos, pacientes, comunicação e
           finanças, tudo em um só lugar. Toque sua clínica com poucos cliques e

@@ -2,7 +2,8 @@ type TextInputProps = {
   placeholder: string;
   label: string;
   name: string;
-  type: "text" | "email" | "textarea";
+  type: "text" | "email";
+  onChange?: () => void;
 };
 
 export default function TextInput(props: TextInputProps) {
@@ -12,10 +13,12 @@ export default function TextInput(props: TextInputProps) {
         {props.label}
       </label>
       <input
+        id={props.name}
         name={props.name}
         placeholder={props.placeholder}
         type={props.type}
-        className="border p-2 rounded-xl"
+        className="border-2 p-2 rounded-xl"
+        onChange={props.onChange}
       ></input>
     </div>
   );

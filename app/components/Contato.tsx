@@ -1,12 +1,13 @@
 import Botao from "./Botao";
+import BotaoSubmit from "./BotaoSubmit";
 import TextArea from "./TextArea";
 import TextInput from "./TextInput";
 
 export default function Contato() {
   return (
     <section id="contato" className="grid grid-cols-2 mx-12 mb-24">
-      <div className="p-8  border-r border-[var(--stormy-teal)]">
-        <h1 className="text-2xl font-semibold">Entre em contato!</h1>
+      <div className="p-8 border-r border-[var(--stormy-teal)]">
+        <h2 className="text-2xl font-semibold">Entre em contato!</h2>
         <form className="flex flex-col rounded-xl border-2 border-[var(--stormy-teal)] p-6 gap-3">
           <TextInput
             label="E-mail"
@@ -26,18 +27,16 @@ export default function Contato() {
             name="informacoes"
           />
 
-          <Botao
-            conteudo="Enviar"
-            backgroundColor="var(--stormy-teal)"
-            color="white"
-          />
+          <div className="border-b-2"></div>
+
+          <BotaoSubmit />
         </form>
       </div>
 
       <div className="flex flex-col gap-4 p-8 border-l border-[var(--stormy-teal)]">
-        <h1 className="text-2xl font-semibold">
+        <h2 className="text-2xl font-semibold">
           Ajude a construir o OdontoMS.
-        </h1>
+        </h2>
         <p>
           Seu contato nos ajuda a entender melhor as dores do fluxo de trabalho
           de clínicas em operação e implementar soluções inteligentes de maneira

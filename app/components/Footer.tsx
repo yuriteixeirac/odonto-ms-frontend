@@ -1,6 +1,6 @@
-import github from "../../public/github.svg";
-import email from "../../public/mail.svg";
-import linkedin from "../../public/linkedin.svg";
+import github from "../assets/github.svg";
+import email from "../assets/mail.svg";
+import linkedin from "../assets/linkedin.svg";
 
 export default function Footer() {
   const links = [
@@ -15,7 +15,7 @@ export default function Footer() {
         <ul className="flex gap-8 justify-center">
           {links.map((link) => {
             return (
-              <li>
+              <li key={link.url}>
                 <a href={link.url}>
                   <img src={link.img} width={25} className="invert-100" />
                 </a>

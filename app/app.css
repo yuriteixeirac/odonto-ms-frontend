@@ -9,12 +9,16 @@
   --alabaster-grey: #dce1de;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Poppins";
   color: var(--carbon-black);
 }
 
-#plano-card {
+.plano-card {
   background-image: linear-gradient(
     to top,
     var(--stormy-teal),

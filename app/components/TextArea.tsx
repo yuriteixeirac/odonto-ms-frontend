@@ -11,8 +11,10 @@ export default function TextArea(props: TextAreaProps) {
         {props.label}
       </label>
       <textarea
+        id={props.name}
+        name={props.name}
         placeholder={props.placeholder}
-        className="w-full border rounded-xl p-2 h-32"
+        className="w-full border-2 rounded-xl p-2 h-32"
       ></textarea>
     </div>
   );
