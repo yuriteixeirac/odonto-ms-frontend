@@ -3,6 +3,7 @@ import type { Route } from "./+types/home";
 import Hero from "~/components/Hero";
 import Capacidades from "~/components/Capacidades";
 import Planos from "~/components/Planos";
+import Contato from "~/components/Contato";
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -18,6 +19,7 @@ export default function Home() {
       <Hero />
       <Capacidades />
       <Planos />
+      <Contato />
       <div className="mb-50"></div>
     </div>
   );

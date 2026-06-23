@@ -27,10 +27,14 @@ export default function Hero() {
         <div className="flex justify-center gap-5">
           <Botao
             conteudo="Começar agora"
-            backgroundColor="black"
+            backgroundColor="var(--carbon-black)"
             color="white"
           />
-          <Botao conteudo="Entrar" backgroundColor="teal" color="white" />
+          <Botao
+            conteudo="Entrar"
+            backgroundColor="var(--stormy-teal)"
+            color="white"
+          />
         </div>
       </div>
     </section>

@@ -1,6 +1,6 @@
 export default function Planos() {
   return (
-    <section className="flex justify-center mx-auto w-295 text-white mt-12">
+    <section className="flex justify-center mx-auto w-295 text-white my-36">
       <div className="grid grid-cols-2 gap-6">
         <article id="plano-card" className="rounded-xl p-6">
           <h2 className="font-semibold text-xl">Plano simples</h2>
